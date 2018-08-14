@@ -6,11 +6,26 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".SplashActivity"
-    tools:showIn="@layout/activity_splash">
+    tools:showIn="@layout/activity_splash"
+    android:orientation="vertical"
+    android:gravity="center">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="M" />
+        android:text="M"
+        android:background="@drawable/logo_bg"
+        android:padding="30dp"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mentorfy"
+        android:textSize="18sp"
+        android:layout_margin="10dp"
+        android:textColor="#3598DB"
+        />
 
 </LinearLayout>
