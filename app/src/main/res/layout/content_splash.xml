@@ -10,11 +10,17 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <LinearLayout
+        android:id="@+id/llSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/tvLogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="M"
+        android:layout_gravity="center"
         android:background="@drawable/logo_bg"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"
@@ -28,9 +34,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mentorfy"
+        android:layout_gravity="center"
         android:textSize="25sp"
-        android:layout_margin="13dp"
+        android:layout_margin="10dp"
         android:textColor="#3598DB"
         />
+    </LinearLayout>
 
 </LinearLayout>
