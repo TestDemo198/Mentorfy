@@ -16,6 +16,7 @@ public class SplashActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
     }
+/*
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -23,8 +24,9 @@ public class SplashActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.menu_splash, menu);
         return true;
     }
+*/
 
-    @Override
+ /*   @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -37,5 +39,5 @@ public class SplashActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 }
