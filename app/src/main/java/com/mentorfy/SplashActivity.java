@@ -1,5 +1,6 @@
 package com.mentorfy;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -53,5 +54,9 @@ public class SplashActivity extends AppCompatActivity {
             }
         });
         llSplash.startAnimation(animation);
+
+        Intent intent=new Intent(this,LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 }
