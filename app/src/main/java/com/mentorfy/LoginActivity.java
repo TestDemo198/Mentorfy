@@ -9,7 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
-import com.mentorfy.fragments.ProtectPasswordFragments;
+import com.fragments.ProtectPasswordFragments;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     private TextView tvLoginLinkedin, tvLoginPhoneNumber;

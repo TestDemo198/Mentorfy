@@ -1,4 +1,4 @@
-package com.mentorfy.fragments;
+package com.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
