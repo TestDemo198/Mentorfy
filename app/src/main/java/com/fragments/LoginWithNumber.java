@@ -27,6 +27,9 @@ public class LoginWithNumber extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         fragment = new ProtectPasswordFragments();
-        getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack("").commit();
+        getActivity().getSupportFragmentManager()
+                .beginTransaction().replace(R.id.container, fragment)
+                .addToBackStack("")
+                .commit();
     }
 }
