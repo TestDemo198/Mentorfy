@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
 
+import com.fragments.LoginWithNumber;
 import com.fragments.ProtectPasswordFragments;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
@@ -37,8 +38,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            default:
+            case R.id.tvLoginLinkedin:
                 fragment = new ProtectPasswordFragments();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack("").commit();
+                break;
+            case R.id.tvLoginPhoneNumber:
+                fragment = new LoginWithNumber();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).addToBackStack("").commit();
                 break;
         }
