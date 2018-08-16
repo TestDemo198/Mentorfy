@@ -15,30 +15,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-    <TextView
-        android:id="@+id/tvLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="M"
-        android:layout_gravity="center"
-        android:background="@drawable/logo_bg"
-        android:paddingLeft="40dp"
-        android:paddingRight="40dp"
-        android:paddingBottom="30dp"
-        android:paddingTop="30dp"
-        android:textSize="35sp"
-        android:textColor="@android:color/white"
-        />
-    <TextView
-        android:id="@+id/tvTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Mentorfy"
-        android:layout_gravity="center"
-        android:textSize="25sp"
-        android:layout_margin="10dp"
-        android:textColor="#3598DB"
-        />
+        <TextView
+            android:id="@+id/tvLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:layout_gravity="center"
+            android:background="@drawable/logo_bg"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:textSize="35sp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mentorfy"
+            android:layout_gravity="center"
+            android:textSize="25sp"
+            android:layout_margin="10dp"
+            android:textColor="#3598DB"
+            />
     </LinearLayout>
 
 </LinearLayout>
