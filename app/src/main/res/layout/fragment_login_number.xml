@@ -44,6 +44,7 @@
             android:background="@drawable/logo_bg"
             android:layout_marginTop="35dp"
             android:text="CONTINUE"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:id="@+id/bContinue"/>
     </LinearLayout>
 </LinearLayout>
