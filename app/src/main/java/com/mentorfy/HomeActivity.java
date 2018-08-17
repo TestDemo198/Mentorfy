@@ -74,6 +74,7 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
     @Override
     public void onTabSelected(TabLayout.Tab tab) {
         setIcon(tab.getPosition());
+        vpHome.setCurrentItem(tab.getPosition());
     }
 
     @Override
