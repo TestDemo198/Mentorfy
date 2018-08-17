@@ -3,24 +3,47 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"/>
+    android:orientation="vertical">
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tatiana Shawbrrok"/>
+            android:text="Message"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:id="@+id/tvMessage"
+            android:textColor="@color/colorAccent"/>
+        <View
+            android:layout_width=".5dp"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:layout_margin="2dp"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What I was thinking"/>
+            android:text="Request"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:id="@+id/tvRequest"/>
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".8dp"
+        android:background="@color/gray"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rvMessageRequest"/>
+
+ \
 
 </LinearLayout>

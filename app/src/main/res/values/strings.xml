@@ -3,4 +3,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_home">HomeActivity</string>
+    <string name="account_executive_jp_nmorganstanley">Account Executive, JP\nMorgan Stanley</string>
+    <string name="what_i_was_thinking_was_we_could_potentially_meet_on_the_thurs_after">What I was thinking was we could potentially meet on the Thurs after</string>
 </resources>
