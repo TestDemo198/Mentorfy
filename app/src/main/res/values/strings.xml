@@ -5,4 +5,8 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="account_executive_jp_nmorganstanley">Account Executive, JP\nMorgan Stanley</string>
     <string name="what_i_was_thinking_was_we_could_potentially_meet_on_the_thurs_after">What I was thinking was we could potentially meet on the Thurs after</string>
+    <string name="title_activity_comman">CommanActivity</string>
+    <string name="show_mentors_with_the_following_minimum_level_of_professional_experience_or_higher">Show mentors with the following minimum level of professional experience or higher</string>
+    <string name="text">Turning your Public Profile off Hides you from everyone except the people you\'ve already connected with</string>
+    <string name="contact_faq"><![CDATA[Contact & FAQ]]></string>
 </resources>
