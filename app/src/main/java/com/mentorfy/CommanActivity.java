@@ -1,5 +1,6 @@
 package com.mentorfy;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -16,9 +17,11 @@ public class CommanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_comman);
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitle("");
+        toolbar.setTitleTextColor(Color.BLACK);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         startFragments(getIntent().getStringExtra("type"));
+        toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
 
     }
 
