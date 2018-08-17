@@ -11,17 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.adapter.RVExperienceLevelAdaptor;
+import com.adapter.RVProfessionsAdaptor;
 import com.mentorfy.R;
 
-public class ExperienceLevelFragment extends Fragment {
-    RecyclerView rvExperienceLevels;
+public class ProfessionsFragment extends Fragment{
+    RecyclerView rvProfessions;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.experience_level,container,false);
-        rvExperienceLevels=view.findViewById(R.id.rvExperienceLevels);
-        rvExperienceLevels.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rvExperienceLevels.setAdapter(new RVExperienceLevelAdaptor(getActivity()));
+        View view=inflater.inflate(R.layout.professions,container,false);
+        rvProfessions=view.findViewById(R.id.rvProfessions);
+        rvProfessions.setLayoutManager(new LinearLayoutManager(getActivity()));
+        rvProfessions.setAdapter(new RVProfessionsAdaptor(getActivity()));
         return view;
     }
 }

@@ -18,7 +18,7 @@ import com.mentorfy.R;
 
 public class MentorFragment extends Fragment implements View.OnClickListener {
     RecyclerView rvMentors;
-    LinearLayout llExperienceLevel;
+    LinearLayout llExperienceLevel,llProfession;
     Intent intent;
     @Nullable
     @Override
@@ -26,6 +26,8 @@ public class MentorFragment extends Fragment implements View.OnClickListener {
         View view=inflater.inflate(R.layout.mentor_fragment,container,false);
         rvMentors=view.findViewById(R.id.rvMentors);
         llExperienceLevel=view.findViewById(R.id.llExperienceLevel);
+        llProfession=view.findViewById(R.id.llProfession);
+        llProfession.setOnClickListener(this);
         llExperienceLevel.setOnClickListener(this);
         rvMentors.setLayoutManager(new GridLayoutManager(getActivity(),2));
         rvMentors.setAdapter(new RVMentorsAdator(getActivity()));
@@ -38,6 +40,11 @@ public class MentorFragment extends Fragment implements View.OnClickListener {
             case R.id.llExperienceLevel:
                 intent=new Intent(getActivity(), CommanActivity.class);
                 intent.putExtra("type","Experience Level");
+                startActivity(intent);
+                break;
+            case R.id.llProfession:
+                intent=new Intent(getActivity(), CommanActivity.class);
+                intent.putExtra("type","Professions");
                 startActivity(intent);
                 break;
         }
