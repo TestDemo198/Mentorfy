@@ -13,6 +13,7 @@ import com.mentorfy.R;
 
 public class SettingsFragment extends Fragment implements View.OnClickListener {
    LinearLayout llNotificationSetting,llContactFAQ;
+   Fragment fragment;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -28,8 +29,22 @@ public class SettingsFragment extends Fragment implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.llContactFAQ:
+                fragment=new ContactFAQFragment();
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container,fragment)
+                        .addToBackStack("")
+                        .commit();
                 break;
             case R.id.llNotificationSetting:
+                fragment=new NotificationFragment();
+                getActivity()
+                        .getSupportFragmentManager()
+                        .beginTransaction()
+                        .replace(R.id.container,fragment)
+                        .addToBackStack("")
+                        .commit();
                 break;
         }
     }

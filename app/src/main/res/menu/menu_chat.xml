@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mentorfy.SplashActivity">
+        <item
+            android:id="@+id/action_view_profile"
+            android:orderInCategory="100"
+            android:title="@string/view_profile"
+            app:showAsAction="never" />
+    <item
+        android:id="@+id/action_block"
+        android:orderInCategory="100"
+        android:title="@string/block_report"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_unmatch"
+        android:orderInCategory="100"
+        android:title="@string/unmatch"
+        app:showAsAction="never" />
+</menu>

@@ -24,6 +24,7 @@ public class HomeActivity extends AppCompatActivity implements ViewPager.OnPageC
         vpHome.setAdapter(new VPHomeAdapter(HomeActivity.this,getSupportFragmentManager()));
         vpHome.addOnPageChangeListener(this);
         tabLayout.addOnTabSelectedListener(this);
+        vpHome.setCurrentItem(1);
 
     }
 

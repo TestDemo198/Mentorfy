@@ -36,6 +36,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Rana warasingha ||" />
 
         <View
@@ -61,6 +64,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Account Executive" />
 
         <View
@@ -88,6 +94,7 @@
                 android:layout_marginLeft="10dp"
                 android:padding="10dp"
                 android:text="203"
+                android:textStyle="italic"
                 android:textSize="15sp" />
         </LinearLayout>
 
@@ -102,6 +109,9 @@
             android:background="@android:color/white"
             android:maxLines="1"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Experienced executive with 25+ years experience" />
 
         <View
@@ -128,6 +138,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="JP Morgan Stanley" />
 
         <View
@@ -152,6 +165,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
             android:text="25" />
 
         <View
