@@ -14,4 +14,6 @@
     <string name="block_report"><![CDATA[Block & Report]]></string>
     <string name="unmatch">Unmatch</string>
     <string name="view_profile">View profile</string>
+    <string name="request_dialog">Write a little about why you wish to be mentored bt this Mentor what you would like help with</string>
+    <string name="send_mentor_request">Send mentor\nrequest</string>
 </resources>

@@ -12,7 +12,7 @@
             android:id="@+id/profile_image"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:src="@mipmap/image"
+            android:src="@mipmap/profile_add"
             app:civ_border_width="5dp"
             app:civ_border_color="#ffffff"
             android:layout_gravity="center"

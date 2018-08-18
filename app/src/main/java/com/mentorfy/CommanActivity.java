@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import com.fragments.BlockReportFragment;
 import com.fragments.EditProfileFragment;
 import com.fragments.ExperienceLevelFragment;
+import com.fragments.MentorProfileFragment;
 import com.fragments.ProfessionsFragment;
 import com.fragments.SettingsFragment;
 
@@ -56,6 +57,11 @@ public class CommanActivity extends AppCompatActivity {
             case "Report":
                 setTitleTool(type);
                 fragment=new BlockReportFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+                break;
+            case "Mentor Profile":
+                setTitleTool(type);
+                fragment=new MentorProfileFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
                 break;
         }
