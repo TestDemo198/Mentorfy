@@ -50,8 +50,8 @@
         android:padding="8dp"
         android:id="@+id/llEditProfile">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:src="@drawable/ic_edit_black_64dp"
             android:layout_marginLeft="10dp"
             />
@@ -77,8 +77,8 @@
         android:padding="8dp"
         android:id="@+id/llSettings">
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
             android:src="@drawable/ic_build_black_64dp"
             android:layout_marginLeft="10dp"
             />

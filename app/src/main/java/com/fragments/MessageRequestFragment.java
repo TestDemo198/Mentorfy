@@ -1,5 +1,6 @@
 package com.fragments;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -13,9 +14,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.adapter.RVMessagesAdater;
+import com.mentorfy.ChatActivity;
 import com.mentorfy.R;
 
-public class MessageRequestFragment extends Fragment implements View.OnClickListener {
+public class MessageRequestFragment extends Fragment implements View.OnClickListener, RVMessagesAdater.OpenMessages {
     RecyclerView rvMessageRequest;
     TextView tvMessage,tvRequest;
     @Nullable
@@ -24,7 +26,7 @@ public class MessageRequestFragment extends Fragment implements View.OnClickList
         View view=inflater.inflate(R.layout.fragment_message_request,container,false);
         rvMessageRequest=view.findViewById(R.id.rvMessageRequest);
         rvMessageRequest.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rvMessageRequest.setAdapter(new RVMessagesAdater(getActivity()));
+        rvMessageRequest.setAdapter(new RVMessagesAdater(getActivity(),this));
         tvMessage=view.findViewById(R.id.tvMessage);
         tvRequest=view.findViewById(R.id.tvRequest);
         tvMessage.setOnClickListener(this);
@@ -44,5 +46,11 @@ public class MessageRequestFragment extends Fragment implements View.OnClickList
                 tvMessage.setTextColor(Color.parseColor("#FF434343"));
                 break;
         }
+    }
+
+    @Override
+    public void openSingleChatProfile(int pos) {
+    startActivity(new Intent(getActivity(), ChatActivity.class));
+
     }
 }

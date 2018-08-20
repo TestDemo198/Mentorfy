@@ -1,5 +1,6 @@
 package com.fragments;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -10,13 +11,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.LinearLayout;
 
 import com.adapter.RVMentorsAdator;
 import com.mentorfy.CommanActivity;
 import com.mentorfy.R;
 
-public class MentorFragment extends Fragment implements View.OnClickListener {
+public class MentorFragment extends Fragment implements View.OnClickListener, RVMentorsAdator.MentorRequest {
     RecyclerView rvMentors;
     LinearLayout llExperienceLevel,llProfession;
     Intent intent;
@@ -30,7 +32,7 @@ public class MentorFragment extends Fragment implements View.OnClickListener {
         llProfession.setOnClickListener(this);
         llExperienceLevel.setOnClickListener(this);
         rvMentors.setLayoutManager(new GridLayoutManager(getActivity(),2));
-        rvMentors.setAdapter(new RVMentorsAdator(getActivity()));
+        rvMentors.setAdapter(new RVMentorsAdator(getActivity(),this));
         return view;
     }
 
@@ -48,5 +50,20 @@ public class MentorFragment extends Fragment implements View.OnClickListener {
                 startActivity(intent);
                 break;
         }
+    }
+
+    @Override
+    public void mentorRequestSend(int pos) {
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.mentor_request_dialog);
+        dialog.show();
+    }
+
+    @Override
+    public void mentorProfile(int pos) {
+        intent=new Intent(getActivity(),CommanActivity.class);
+        intent.putExtra("type","Mentor Profile");
+        startActivity(intent);
     }
 }

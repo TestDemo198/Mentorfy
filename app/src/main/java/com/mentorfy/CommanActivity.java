@@ -8,8 +8,10 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.fragments.BlockReportFragment;
 import com.fragments.EditProfileFragment;
 import com.fragments.ExperienceLevelFragment;
+import com.fragments.MentorProfileFragment;
 import com.fragments.ProfessionsFragment;
 import com.fragments.SettingsFragment;
 
@@ -33,23 +35,33 @@ public class CommanActivity extends AppCompatActivity {
     private void startFragments(String type) {
         switch (type){
             case "Experience Level":
-                toolbar.setTitle(type);
+                setTitleTool(type);
                 fragment=new ExperienceLevelFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
                 break;
             case "Professions":
-                toolbar.setTitle(type);
+                setTitleTool(type);
                 fragment=new ProfessionsFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
                 break;
             case "Settings":
-                toolbar.setTitle(type);
+                setTitleTool(type);
                 fragment=new SettingsFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
                 break;
             case "Edit Profile":
-                toolbar.setTitle(type);
+                setTitleTool(type);
                 fragment=new EditProfileFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+                break;
+            case "Report":
+                setTitleTool(type);
+                fragment=new BlockReportFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
+                break;
+            case "Mentor Profile":
+                setTitleTool(type);
+                fragment=new MentorProfileFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).commit();
                 break;
         }
@@ -78,4 +90,7 @@ public class CommanActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    public void setTitleTool(String s) {
+        toolbar.setTitle(s);
+    }
 }

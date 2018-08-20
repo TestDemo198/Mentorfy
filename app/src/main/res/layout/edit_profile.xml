@@ -12,7 +12,7 @@
             android:id="@+id/profile_image"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:src="@mipmap/image"
+            android:src="@mipmap/profile_add"
             app:civ_border_width="5dp"
             app:civ_border_color="#ffffff"
             android:layout_gravity="center"
@@ -36,6 +36,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Rana warasingha ||" />
 
         <View
@@ -61,6 +64,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Account Executive" />
 
         <View
@@ -71,6 +77,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center"
             android:orientation="horizontal">
 
             <TextView
@@ -87,6 +94,7 @@
                 android:layout_marginLeft="10dp"
                 android:padding="10dp"
                 android:text="203"
+                android:textStyle="italic"
                 android:textSize="15sp" />
         </LinearLayout>
 
@@ -101,6 +109,9 @@
             android:background="@android:color/white"
             android:maxLines="1"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="Experienced executive with 25+ years experience" />
 
         <View
@@ -127,6 +138,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
             android:text="JP Morgan Stanley" />
 
         <View
@@ -151,6 +165,9 @@
             android:layout_height="wrap_content"
             android:background="@android:color/white"
             android:padding="10dp"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
             android:text="25" />
 
         <View

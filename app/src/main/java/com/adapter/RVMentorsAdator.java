@@ -6,11 +6,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.mentorfy.R;
 
 public class RVMentorsAdator extends RecyclerView.Adapter<RVMentorsAdator.RVMentorsHolder> {
-    public RVMentorsAdator(FragmentActivity activity) {
+    MentorRequest request;
+    public RVMentorsAdator(FragmentActivity activity,MentorRequest request) {
+        this.request=request;
     }
 
     @NonNull
@@ -30,9 +33,25 @@ public class RVMentorsAdator extends RecyclerView.Adapter<RVMentorsAdator.RVMent
         return 4;
     }
 
-    public class RVMentorsHolder extends RecyclerView.ViewHolder {
+    public class RVMentorsHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView tvMentorMe;
         public RVMentorsHolder(View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this);
+            tvMentorMe=itemView.findViewById(R.id.tvMentorMe);
+            tvMentorMe.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            if (view.getId()==R.id.tvMentorMe)
+            request.mentorRequestSend(getAdapterPosition());
+            else
+                request.mentorProfile(getAdapterPosition());
+        }
+    }
+    public interface MentorRequest{
+        public void mentorRequestSend(int pos);
+        public  void mentorProfile(int pos);
     }
 }

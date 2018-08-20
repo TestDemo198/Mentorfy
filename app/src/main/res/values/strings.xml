@@ -9,4 +9,11 @@
     <string name="show_mentors_with_the_following_minimum_level_of_professional_experience_or_higher">Show mentors with the following minimum level of professional experience or higher</string>
     <string name="text">Turning your Public Profile off Hides you from everyone except the people you\'ve already connected with</string>
     <string name="contact_faq"><![CDATA[Contact & FAQ]]></string>
+    <string name="choose_what_activities_matter_to_you_n_to_keep_in_touch">Choose what activities matter to you\n  to keep in touch</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="block_report"><![CDATA[Block & Report]]></string>
+    <string name="unmatch">Unmatch</string>
+    <string name="view_profile">View profile</string>
+    <string name="request_dialog">Write a little about why you wish to be mentored bt this Mentor what you would like help with</string>
+    <string name="send_mentor_request">Send mentor\nrequest</string>
 </resources>

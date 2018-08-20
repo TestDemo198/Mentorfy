@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
+            android:gravity="center"
             android:background="@android:color/white">
 
             <TextView
@@ -112,6 +113,7 @@
             android:layout_weight="1"
             android:hint="Type your web username"
             android:background="@android:color/white"
+            android:textSize="15sp"
             android:padding="20dp"/>
         <View
             android:layout_width="match_parent"
@@ -127,6 +129,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/llNotificationSetting"
             android:background="@android:color/white">
             <TextView
                 android:layout_width="wrap_content"
@@ -150,6 +154,8 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:padding="10dp"
+            android:gravity="center"
+            android:id="@+id/llContactFAQ"
             android:background="@android:color/white">
             <TextView
                 android:layout_width="wrap_content"
@@ -168,5 +174,24 @@
             android:layout_width="match_parent"
             android:layout_height=".5dp"
             android:background="@color/gray" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete account"
+            android:textSize="15sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:padding="10dp"/>
+
     </LinearLayout>
 </ScrollView>

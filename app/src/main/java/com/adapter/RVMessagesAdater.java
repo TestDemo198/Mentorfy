@@ -10,7 +10,9 @@ import android.view.ViewGroup;
 import com.mentorfy.R;
 
 public class RVMessagesAdater extends RecyclerView.Adapter<RVMessagesAdater.RVMessagesHolder> {
-    public RVMessagesAdater(FragmentActivity activity) {
+    OpenMessages messages;
+    public RVMessagesAdater(FragmentActivity activity,OpenMessages messages) {
+        this.messages=messages;
     }
 
     @NonNull
@@ -30,9 +32,18 @@ public class RVMessagesAdater extends RecyclerView.Adapter<RVMessagesAdater.RVMe
         return 5;
     }
 
-    public class RVMessagesHolder extends RecyclerView.ViewHolder {
+    public class RVMessagesHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public RVMessagesHolder(View itemView) {
             super(itemView);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            messages.openSingleChatProfile(getAdapterPosition());
+        }
+    }
+    public interface OpenMessages{
+        public void openSingleChatProfile(int pos);
     }
 }
