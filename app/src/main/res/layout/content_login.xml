@@ -23,8 +23,8 @@
 
         <TextView
             android:id="@+id/tvLogo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
             android:background="@drawable/logo_bg"
             android:paddingBottom="15dp"
@@ -33,7 +33,7 @@
             android:paddingTop="15dp"
             android:text="M"
             android:textColor="@android:color/white"
-            android:textSize="35sp" />
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/tvTitle"
@@ -43,7 +43,7 @@
             android:layout_margin="10dp"
             android:text="Mentorfy"
             android:textColor="#3598DB"
-            android:textSize="35sp" />
+            android:textSize="30sp" />
     </LinearLayout>
 
 
@@ -53,7 +53,7 @@
         android:layout_height="45dp"
         android:background="@drawable/logo_bg"
         android:gravity="center"
-        android:text="LOG IN WITH LINKEDIN"
+        android:text="LOG IN WITH FACEBOOK"
         android:textColor="@android:color/white"
         android:textStyle="bold"
         android:layout_marginLeft="20dp"
@@ -75,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Don't worry! We never post to Linkedin. "
+        android:text="Don't worry! We never post to Facebook. "
         android:textColor="@color/blue_mix"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
